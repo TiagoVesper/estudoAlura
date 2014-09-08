@@ -1,0 +1,49 @@
+@CHARSET "ISO-8859-1";
+
+.input-group-addon{
+	border-color: #e5e5e5; 
+	background: #e5e5e5; 
+	color:black;
+}
+
+.input-group-addon > i{
+	background-color: #e5e5e5; 
+	border-color: #e5e5e5;
+	color:black;
+	
+}
+
+.col-md-3{
+	padding-left:0;
+}
+
+.tblPeriodicidade tbody > tr > td{
+	padding: 2px;
+	vertical-align: middle;
+}
+
+.tblPeriodicidade thead > tr > th{
+	vertical-align: middle;
+	text-align: center;
+}
+
+.has-error{
+	border-color: #b94a48;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.has-error .input-group-addon {
+	padding: 1.9px 11.3px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 1;
+	text-align: center;
+	background-color: #e5e5e5;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+}
+
+.has-error .input-group-addon {
+	color: black;
+}

@@ -1,0 +1,149 @@
+@CHARSET "ISO-8859-1";
+
+body, table {
+	font-size: 12px !important;
+	padding: 10px;
+}
+
+td:empty {
+	min-height: 12px;
+	height: 18px;
+	width: 90px;
+}
+
+h1 { font-size: 16pt; }
+
+.container_relatorio{
+	position : relative;
+	display  : table;
+	width    : 1000px;
+}
+
+.page_break {
+	page-break-before: always;
+	margin-top: 20px;
+}
+
+.cabec_relatorio{
+	position : relative;
+	display  : block;
+	width    : 100%;
+}
+
+		.logo_relatorio{
+			position : relative;
+			display  : block;
+			width    : 200px;
+			height   : 100px;
+			float    : left;
+			clear    : both;
+			z-index  : 800;
+			text-align: center;
+		}
+		.titulo_relatorio{
+			position: relative;
+			display: block;
+			width: 100%;
+			text-align: center;
+			clear: right;
+			z-index: 800;				
+		}
+				
+			.titulo_relatorio span {
+				position: relative;
+				display: block;
+				width: 100%;
+				float: right;
+			}
+
+
+.corpo_relatorio{
+	position : relative;
+	display  : block;
+	clear    : left;
+	width    : 1024px;
+	margin-bottom: 15px;
+}
+		.corpo_relatorio table,.corpo_relatorio table tr, .corpo_relatorio table tr td, .corpo_relatorio table tr th{ border: 1px solid #000; } 
+		.corpo_relatorio table{ width: 100%; margin: -4px; }
+		.corpo_relatorio table tr td{padding: 3px;}
+		.corpo_relatorio > table table {width: 1024px}
+
+.medicaoTitulo{
+	text-align:left;
+}
+
+.tituloDivisao {
+	font-size: 15px;
+}
+
+.quebraPagina{
+	page-break-before: always
+}
+
+/* ************************************************* */
+/* ESTILOS PARA A LISTAGEM DE EQUIPAMENTOS PENDENTES */
+/* ************************************************* */
+
+
+.equip_pendentes{
+	position   : relative;
+	display    : table;
+	margin-top : 25px;
+}
+
+.equip_pendentes p{
+	position         : relative;
+	display          : block;
+	width            : 100%;
+	padding          : 10px;
+	margin           : 0px;
+	font-size        : 12pt;
+	color            : #F00;
+	text-decoration  : underline;
+	border           : 1px solid #000;
+	background-color : #F0F0F0;
+	text-transform   : uppercase;
+}
+
+.equip_pendentes ul{
+	margin  : 0px;
+	padding : 0px;
+}
+
+.equip_pendentes ul li{
+	position   : relative;
+	width      : 100%;
+	padding    : 10px;
+	margin     : 0px;
+	font-size  : 10pt;
+	list-style : none;
+	border     : 1px solid #000;
+}
+
+.tbl_interna td {
+	border: 0 none !important;
+}
+
+.logo { max-width : 200px; max-height : 100px; }
+
+.medicoes td { line-height: 18px; }
+
+.pagina{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+table table tr td, table table tr th {
+	vertical-align: middle;
+	min-width: 50px;
+}
+
+th {
+	background-color: #e3e3e3;
+	padding: 2px;
+}
+.linhaObservacao{
+	height: 28px;
+}

@@ -1,0 +1,74 @@
+html, body, div, span, applet, object, iframe, /*h1, h2, h3, h4, h5, h6,*/ p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, form, label, legend, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 100%;
+	outline: 0px;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+fieldset {
+	margin: 0px;
+	padding: 10px;
+}
+
+legend {
+	padding: 0px 5px 0px 5px;
+}
+
+body {
+	line-height: 1;
+	-webkit-print-color-adjust:exact;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+:focus {
+	outline: 0;
+}
+
+/*remember to define focus styles!*/
+ins {
+	text-decoration: none;
+}
+
+/*remember to highlight inserts somehow!*/
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border: 0px;
+}
+
+/*tables still need 'cellspacing="0"' in the markup*/
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+#semBorda {
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-top: 0px;
+
+}
+
+#assinatura {
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	border-top: 0px;
+	padding: 40px;
+}
+
