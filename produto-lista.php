@@ -1,22 +1,23 @@
-<?php include("cabecalho.php")?>
-<?php include("conecta.php");
+<?php
+include("cabecalho.php");
+include("conecta.php");
+include("banco-produto.php"); ?>
+</br>
+<table class="table table-striped table-bordered">
+    <th>Nome</th>
+    <th>Preço</th>
+    <th>Ação</th>
+    <?php
+    $produtos = listarProdutos($conexao);
+    foreach($produtos as $produto) : ?>
+        <tr>
+            <td><?=$produto['nome']?></td>
+            <td><?=$produto['preco']?></td>
+            <td>
+                <a href="remove-produto.php?id=<?= $produto['id']?>" class="text-danger">remover</a>
+            </td>
+        </tr>
+    <?php endforeach ?>
+</table>
 
-function listarProdutos($conexao){
-    $produtos = array();
-    $resultado = mysqli_query($conexao,'select * from produto');
-
-    while($produto = mysqli_fetch_assoc($resultado)){
-        array_push($produtos,$produto);
-    }
-
-    return $produtos;
-}
-
-$produtos = listarProdutos($conexao);
-foreach($produtos as $produto) {
-    echo $produto['nome'];
-}
-
-?>
-
-<?php include("rodape.php")?>
+<?php include("rodape.php"); ?>

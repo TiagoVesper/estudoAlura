@@ -13,6 +13,7 @@
             </tr>
             <tr>
                 <td><input class="btn btn-primary" type="submit" value="Cadastrar"></td>
+                <td></td>
             </tr>
         </table>
     </form>
