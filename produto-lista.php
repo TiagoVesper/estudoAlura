@@ -10,6 +10,7 @@ include("banco-produto.php"); ?>
 <table class="table table-striped table-bordered">
     <th>Nome</th>
     <th>Preço</th>
+	<th>Categoria</th>
 	<th>Descrição</th>
     <th>Ação</th>
     <?php
@@ -18,6 +19,7 @@ include("banco-produto.php"); ?>
         <tr>
             <td><?=$produto['nome']?></td>
             <td><?=$produto['preco']?></td>
+	        <td><?=$produto['categoriaNome']?></td>
 	        <td><?=$produto['descricao']?></td>
             <td>
 	            <form action="remove-produto.php" method="post">

@@ -1,5 +1,9 @@
-<?php include("cabecalho.php")?>
+<?php include("cabecalho.php");
+include("conecta.php");
+include("banco-categoria.php");
 
+$categorias = listarCategorias($conexao);
+?>
     <h1>Formulario de produto</h1>
     <form action="adiciona-produto.php" method="post">
         <table class="table">
@@ -16,10 +20,18 @@
 		        <td><textarea class="form-control" name="descricao"></textarea></br></td>
 	        </tr>
 	        <tr>
+		        <td></td>
+		        <td><input type="checkbox" name="usado" value="true">usado</td>
+	        </tr>
+	        <tr>
 		        <td>Categoria:</td>
-		        <td><input type="radio" name="categoriaID" value="1">Esporte</br>
-		            <input type="radio" name="categoriaID" value="2">Escolar</br>
-		            <input type="radio" name="categoriaID" value="3">Mobilidade</br></td>
+		        <td>
+			        <select name="categoriaID" class="form-control">
+				        <?php foreach($categorias as $categoria) : ?>
+					        <option value="<?= $categoria['id']?>"><?= $categoria['nome']?></option>
+				        <?php endforeach ?>
+				    </select>
+		        </td>
 	        </tr>
             <tr>
                 <td><input class="btn btn-primary" type="submit" value="Cadastrar"></td>
