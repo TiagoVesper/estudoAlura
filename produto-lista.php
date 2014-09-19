@@ -12,7 +12,7 @@ include("banco-produto.php"); ?>
     <th>Preço</th>
 	<th>Categoria</th>
 	<th>Descrição</th>
-    <th>Ação</th>
+    <th colspan="2">Ação</th>
     <?php
     $produtos = listarProdutos($conexao);
     foreach($produtos as $produto) : ?>
@@ -21,6 +21,7 @@ include("banco-produto.php"); ?>
             <td><?=$produto['preco']?></td>
 	        <td><?=$produto['categoriaNome']?></td>
 	        <td><?=$produto['descricao']?></td>
+	        <td><a class="btn btn-primary" href="produto-altera-formulario.php?id=<?=$produto['id']?>">Alterar</a></td>
             <td>
 	            <form action="remove-produto.php" method="post">
 		            <input type="hidden" name="id" value="<?=$produto['id']?>">
