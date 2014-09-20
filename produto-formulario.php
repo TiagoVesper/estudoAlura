@@ -20,8 +20,8 @@ $categorias = listarCategorias($conexao);
 		        <td><textarea class="form-control" name="descricao"></textarea></br></td>
 	        </tr>
 	        <tr>
-		        <td></td>
-		        <td><input type="checkbox" name="usado" value="true">usado</td>
+		        <td>Usado</td>
+		        <td><input type="checkbox" name="usado" value="true"></td>
 	        </tr>
 	        <tr>
 		        <td>Categoria:</td>
