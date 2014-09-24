@@ -4,6 +4,8 @@
     <title>Minha loja</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/loja.css" rel="stylesheet">
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
